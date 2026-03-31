@@ -129,7 +129,7 @@ class StudentAgent(Agent):
         best_move_so_far = valid_moves[0]
         player = game.to_move()
 
-        # iterative deepening code before time runs out
+        # Iterative Deepening code before time runs out
         for depth in range(1, 100):
             try:
                 move = self.alpha_beta_search(game, depth, player, valid_moves)
